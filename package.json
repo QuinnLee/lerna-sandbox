@@ -5,11 +5,11 @@
       "packages/*"
     ]
   },
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "Lerna Sandbox",
   "main": "index.js",
-  "repository": "https://github.com/onursumer/lerna-sandbox.git",
-  "author": "Onur Sumer <s.onur.sumer@gmail.com>",
+  "repository": "https://github.com/QuinnLee/lerna-sandbox",
+  "author": "foobar@gmail.com",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -20,6 +20,11 @@
   },
   "scripts": {
     "publishModules": "./scripts/publish.sh",
-    "updateVersion": "./scripts/version.sh"
+    "updateVersion": "./scripts/version.sh",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.2",
+    "semantic-release-monorepo": "^7.0.5"
   }
 }
