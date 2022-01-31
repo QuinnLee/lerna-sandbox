@@ -1104,6 +1104,16 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
+"@semantic-release/changelog@^6.0.1":
+  "integrity" "sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA=="
+  "resolved" "https://registry.npmjs.org/@semantic-release/changelog/-/changelog-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "@semantic-release/error" "^3.0.0"
+    "aggregate-error" "^3.0.0"
+    "fs-extra" "^9.0.0"
+    "lodash" "^4.17.4"
+
 "@semantic-release/commit-analyzer@^9.0.2":
   "integrity" "sha512-E+dr6L+xIHZkX4zNMe6Rnwg4YQrWNXK+rNsvwOPpdFppvZO1olE2fIgWhv89TkQErygevbjsZFSIxp+u6w2e5g=="
   "resolved" "https://registry.npmjs.org/@semantic-release/commit-analyzer/-/commit-analyzer-9.0.2.tgz"
@@ -1126,6 +1136,20 @@
   "integrity" "sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw=="
   "resolved" "https://registry.npmjs.org/@semantic-release/error/-/error-3.0.0.tgz"
   "version" "3.0.0"
+
+"@semantic-release/git@^10.0.1":
+  "integrity" "sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w=="
+  "resolved" "https://registry.npmjs.org/@semantic-release/git/-/git-10.0.1.tgz"
+  "version" "10.0.1"
+  dependencies:
+    "@semantic-release/error" "^3.0.0"
+    "aggregate-error" "^3.0.0"
+    "debug" "^4.0.0"
+    "dir-glob" "^3.0.0"
+    "execa" "^5.0.0"
+    "lodash" "^4.17.4"
+    "micromatch" "^4.0.0"
+    "p-reduce" "^2.0.0"
 
 "@semantic-release/github@^8.0.0":
   "integrity" "sha512-wIbfhOeuxlYzMTjtSAa2xgr54n7ZuPAS2gadyTWBpUt2PNAPgla7A6XxCXJnaKPgfVF0iFfSk3B+KlVKk6ByVg=="
@@ -1358,6 +1382,8 @@
     "color-convert" "^2.0.1"
 
 "ansicolors@*":
+  "integrity" "sha1-ZlWX3oap/+Oqm/vmyuXG6kJrSXk="
+  "resolved" "https://registry.npmjs.org/ansicolors/-/ansicolors-0.3.2.tgz"
   "version" "0.3.2"
 
 "ansicolors@~0.3.2":
@@ -1500,6 +1526,11 @@
   "integrity" "sha1-x57Zf380y48robyXkLzDZkdLS3k="
   "resolved" "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
   "version" "0.4.0"
+
+"at-least-node@^1.0.0":
+  "integrity" "sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg=="
+  "resolved" "https://registry.npmjs.org/at-least-node/-/at-least-node-1.0.0.tgz"
+  "version" "1.0.0"
 
 "atob-lite@^2.0.0":
   "integrity" "sha1-D+9a1G8b16hQLGVyfwNn1e5D1pY="
@@ -2398,6 +2429,13 @@
   dependencies:
     "path-type" "^4.0.0"
 
+"dir-glob@^3.0.1":
+  "integrity" "sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA=="
+  "resolved" "https://registry.npmjs.org/dir-glob/-/dir-glob-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "path-type" "^4.0.0"
+
 "dot-prop@^3.0.0":
   "integrity" "sha1-G3CK8JSknJoOfbyteQq6U52sEXc="
   "resolved" "https://registry.npmjs.org/dot-prop/-/dot-prop-3.0.0.tgz"
@@ -2847,6 +2885,16 @@
     "graceful-fs" "^4.2.0"
     "jsonfile" "^4.0.0"
     "universalify" "^0.1.0"
+
+"fs-extra@^9.0.0":
+  "integrity" "sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ=="
+  "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-9.1.0.tgz"
+  "version" "9.1.0"
+  dependencies:
+    "at-least-node" "^1.0.0"
+    "graceful-fs" "^4.2.0"
+    "jsonfile" "^6.0.1"
+    "universalify" "^2.0.0"
 
 "fs-minipass@^1.2.5":
   "integrity" "sha512-GWSSJGFy4e9GUeCcbIkED+bgAoFyj7XF1mV8rma3QW4NIqX9Kyx79N/PF61H5udOV3aY1IaMLs6pGbH71nlCTA=="
@@ -3907,26 +3955,21 @@
   "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"
   "version" "6.0.3"
 
-"lerna-sandbox-package-four@^1.0.13", "lerna-sandbox-package-four@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-four":
+"lerna-sandbox-package-four-semantic-release@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-four":
   "resolved" "file:packages/lerna-sandbox-package-four"
-  "version" "1.0.13"
+  "version" "1.1.0"
 
-"lerna-sandbox-package-one@^0.1.668", "lerna-sandbox-package-one@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-one":
+"lerna-sandbox-package-one-semantic-release@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-one":
   "resolved" "file:packages/lerna-sandbox-package-one"
-  "version" "0.1.668"
+  "version" "1.1.0"
 
-"lerna-sandbox-package-three@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-three":
+"lerna-sandbox-package-three-semantic-release@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-three":
   "resolved" "file:packages/lerna-sandbox-package-three"
-  "version" "0.1.20"
-  dependencies:
-    "lerna-sandbox-package-four" "^1.0.13"
-    "lerna-sandbox-package-two" "^0.1.7"
+  "version" "1.1.0"
 
-"lerna-sandbox-package-two@^0.1.7", "lerna-sandbox-package-two@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-two":
+"lerna-sandbox-package-two-semantic-release@file:/Users/donut/Test/lerna-sandbox/packages/lerna-sandbox-package-two":
   "resolved" "file:packages/lerna-sandbox-package-two"
-  "version" "0.1.7"
-  dependencies:
-    "lerna-sandbox-package-one" "^0.1.668"
+  "version" "1.1.0"
 
 "lerna@3.19.0":
   "integrity" "sha512-YtMmwEqzWHQCh7Ynk7BvjrZri3EkSeVqTAcwZIqWlv9V/dCfvFPyRqp+2NIjPB5nj1FWXLRH6F05VT/qvzuuOA=="
@@ -4421,6 +4464,14 @@
     "regex-not" "^1.0.0"
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.2"
+
+"micromatch@^4.0.0":
+  "integrity" "sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg=="
+  "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.4.tgz"
+  "version" "4.0.4"
+  dependencies:
+    "braces" "^3.0.1"
+    "picomatch" "^2.2.3"
 
 "micromatch@^4.0.2":
   "integrity" "sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg=="
@@ -6126,7 +6177,7 @@
   "resolved" "https://registry.npmjs.org/semantic-release-plugin-decorators/-/semantic-release-plugin-decorators-3.0.1.tgz"
   "version" "3.0.1"
 
-"semantic-release@^19.0.2", "semantic-release@>=11", "semantic-release@>=15.11.x", "semantic-release@>=18.0.0-beta.1", "semantic-release@>=19.0.0":
+"semantic-release@^19.0.2", "semantic-release@>=11", "semantic-release@>=15.11.x", "semantic-release@>=18.0.0", "semantic-release@>=18.0.0-beta.1", "semantic-release@>=19.0.0":
   "integrity" "sha512-7tPonjZxukKECmClhsfyMKDt0GR38feIC2HxgyYaBi+9tDySBLjK/zYDLhh+m6yjnHIJa9eBTKYE7k63ZQcYbw=="
   "resolved" "https://registry.npmjs.org/semantic-release/-/semantic-release-19.0.2.tgz"
   "version" "19.0.2"
