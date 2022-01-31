@@ -1,6 +1,6 @@
 {
   "name": "lerna-sandbox-package-two-semantic-release",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "Package Two",
   "main": "index.js",
   "license": "MIT",
