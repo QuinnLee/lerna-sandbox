@@ -1,5 +1,8 @@
 {
   "name": "lerna-sandbox",
+  "release": {
+    "branches": ["master", "next"]
+  },
   "workspaces": {
     "packages": [
       "packages/*"
