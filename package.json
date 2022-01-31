@@ -1,6 +1,7 @@
 {
   "name": "lerna-sandbox-semantic-release",
   "release": {
+    "extends": "semantic-release-monorepo",
     "branches": [
       "master",
       "next"
