@@ -1,13 +1,7 @@
-function packageFour() {
-    return "I am an awesome package (4)";
-}
+const packageFour = ()  => "I am an awesome package (4)";
 
-function wouldYouDispatchTwice() {
-    return "Maybe just once!!";
-}
+const wouldYouDispatchTwice = () => "Maybe just once!!";
 
-function canYouDispatchToPublish() {
-    return "We will publish this one!!";
-}
+const canYouDispatchToPublish = () => "We will publish this one!!";
 
 exports.packageFour = packageFour;
