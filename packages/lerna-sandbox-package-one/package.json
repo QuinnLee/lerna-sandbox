@@ -1,5 +1,5 @@
 {
-  "name": "lerna-sandbox-package-one",
+  "name": "lerna-sandbox-package-one-semantic-release",
   "version": "0.1.668",
   "description": "Package One",
   "main": "index.js",
