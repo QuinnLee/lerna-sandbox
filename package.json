@@ -1,5 +1,5 @@
 {
-  "name": "lerna-sandbox-semantic-release",
+  "name": "lerna-sandbox-semantic-release-test",
   "release": {
     "extends": "semantic-release-monorepo",
     "branches": [ "master" ],

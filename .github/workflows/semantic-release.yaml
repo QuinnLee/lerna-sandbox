@@ -15,6 +15,7 @@ jobs:
         run: npm whoami
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm i npm@8 -g # we need a version of npm that supports workspaces
       - run: npm ci
       - name: Release
