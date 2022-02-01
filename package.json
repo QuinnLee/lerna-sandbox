@@ -31,7 +31,7 @@
   "version": "0.0.0-development",
   "description": "Lerna Sandbox",
   "main": "index.js",
-  "repository": "https://github.com/QuinnLee/lerna-sandbox",
+  "repository": "git+https://github.com/QuinnLee/lerna-sandbox",
   "author": "foobar@gmail.com",
   "license": "MIT",
   "private": true,
