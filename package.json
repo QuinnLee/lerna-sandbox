@@ -2,10 +2,7 @@
   "name": "lerna-sandbox-semantic-release",
   "release": {
     "extends": "semantic-release-monorepo",
-    "branches": [
-      "master",
-      "next"
-    ],
+    "branches": [ "master" ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
