@@ -4,4 +4,13 @@ function packageTwo() {
     return `I am an awesome package (2) using another package (1): ${packageOne()}`;
 }
 
+function packageTwo() {
+    return `I am an awesome package (2) using another package (1): ${packageOne()}`;
+}
+function packageTwo() {
+    return `I am an awesome package (2) using another package (1): ${packageOne()}`;
+}
+function packageTwo() {
+    return `I am an awesome package (2) using another package (1): ${packageOne()}`;
+}
 exports.packageTwo = packageTwo;

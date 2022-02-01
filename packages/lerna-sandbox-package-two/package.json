@@ -4,4 +4,7 @@
   "description": "Package Two",
   "main": "index.js",
   "license": "MIT"
+  "dependencies": {
+    "lerna-sandbox-package-four-semantic-release": "1.2.0",
+  }
 }
