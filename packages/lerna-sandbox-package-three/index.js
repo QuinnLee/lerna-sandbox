@@ -12,5 +12,11 @@ console.log("Updated!");
 console.log("Updated!");
 console.log("Updated!");
 console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
 
 exports.packageThree = packageThree;

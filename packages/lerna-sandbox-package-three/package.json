@@ -1,6 +1,6 @@
 {
   "name": "lerna-sandbox-package-three-semantic-release-test",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Package Three",
   "main": "index.js",
   "license": "MIT"
