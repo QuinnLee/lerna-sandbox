@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "semantic-release": "^19.0.2",
-    "semantic-release-lerna": "^0.4.2",
     "semantic-release-monorepo": "^7.0.5"
   }
 }
