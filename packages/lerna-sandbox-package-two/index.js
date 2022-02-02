@@ -7,5 +7,23 @@ function packageThree() {
 
 console.log(packageThree());
 console.log("Updated!");
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log(packageThree());
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
+console.log("Updated!");
 
 exports.packageThree = packageThree;
