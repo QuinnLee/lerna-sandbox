@@ -5,7 +5,7 @@
       "packages/*"
     ]
   },
-  "version": "0.2.0",
+  "version": "0.5.0",
   "description": "Lerna Sandbox",
   "main": "index.js",
   "repository": "git+https://github.com/QuinnLee/lerna-sandbox",
