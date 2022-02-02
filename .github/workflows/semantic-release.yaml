@@ -1,22 +1,22 @@
-on: workflow_dispatch
-name: "Semantic Release on Master"
+name: Release
+on: [workflow_dispatch]
 jobs:
-  publish:
-    name: "Publish to NPM"
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          node-version: "14"
-          registry-url: "https://registry.npmjs.org"
-          cache: "npm"
-      - name: Ensure NPM access
-        run: npm whoami
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm i npm@8 -g # we need a version of npm that supports workspaces
-      - run: npm ci
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build --if-present
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -25,4 +25,4 @@ jobs:
           GIT_COMMITTER_NAME: ${{ github.actor }}
           GIT_AUTHOR_EMAIL: "${{ github.actor }}@users.noreply.github.com"
           GIT_COMMITTER_EMAIL: "${{ github.actor }}@users.noreply.github.com"
-        run: lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo
+        run: npm run semantic-release

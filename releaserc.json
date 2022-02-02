@@ -1,0 +1,26 @@
+{
+  "release": {
+    "branches": ["master", "production"]
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    ["semantic-release-lerna", { "generateNotes": true }],
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "packages/*/dist/",
+          "CHANGELOG.md",
+          "lerna.json",
+          "package.json",
+          "package-lock.json",
+          "lerna.json",
+          "packages/*/package.json",
+          "packages/*/package-lock.json"
+        ]
+      }
+    ],
+    "@semantic-release/npm"
+  ]
+}
