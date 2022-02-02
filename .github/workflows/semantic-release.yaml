@@ -17,7 +17,7 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build --if-present
-      - name: Release-packages
+      - name: Release packages and create changelog on mono repo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -25,13 +25,4 @@ jobs:
           GIT_COMMITTER_NAME: ${{ github.actor }}
           GIT_AUTHOR_EMAIL: "${{ github.actor }}@users.noreply.github.com"
           GIT_COMMITTER_EMAIL: "${{ github.actor }}@users.noreply.github.com"
-        run: lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo
-      - name: Release-changelog and tag
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GIT_AUTHOR_NAME: ${{ github.actor }}
-          GIT_COMMITTER_NAME: ${{ github.actor }}
-          GIT_AUTHOR_EMAIL: "${{ github.actor }}@users.noreply.github.com"
-          GIT_COMMITTER_EMAIL: "${{ github.actor }}@users.noreply.github.com"
-        run: npx --no-install semantic-release
+        run: lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo && npx --no-install semantic-release
