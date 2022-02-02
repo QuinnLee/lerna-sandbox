@@ -25,4 +25,4 @@ jobs:
           GIT_COMMITTER_NAME: ${{ github.actor }}
           GIT_AUTHOR_EMAIL: "${{ github.actor }}@users.noreply.github.com"
           GIT_COMMITTER_EMAIL: "${{ github.actor }}@users.noreply.github.com"
-        run: npx --no-install semantic-release -e semantic-release-monorepo --no-ci
+        run: npx --no-install semantic-release
